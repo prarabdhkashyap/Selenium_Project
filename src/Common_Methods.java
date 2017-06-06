@@ -12,10 +12,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Common_Methods {
 
-	WebDriver driver;
-	WebElement element;
+	static WebDriver driver;
+	static WebElement element;
 
-	public WebDriver openBrowser(String browserName, String url) {
+	public static WebDriver openBrowser(String browserName, String url) {
 		if (browserName.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 			driver.get(url);
@@ -27,7 +27,7 @@ public class Common_Methods {
 		return driver;
 	}
 
-	public WebElement findElement(String locator, String path) {
+	public static WebElement findElement(String locator, String path) {
 
 		if (locator.equalsIgnoreCase("id")) {
 			element = driver.findElement(By.id(path));
@@ -41,12 +41,12 @@ public class Common_Methods {
 		element.click();
 	}
 
-	public void typeAndEnter(String text) {
+	public static void typeAndEnter(String text) {
 		element.click();
 		element.sendKeys(text);
 	}
 
-	public String getProperty(String element)
+	public static String getProperty(String element)
 			throws IOException {
 
 		File file = new File(

@@ -1,15 +1,14 @@
 import java.io.IOException;
 
-
-public class Execution_Class extends Common_Methods {
+public class Execution_Class {
 
 	public static void main(String[] args) throws IOException {
-		Execution_Class test = new Execution_Class();
-		
-		test.openBrowser("firefox", test.getProperty("URL"));
-		test.findElement("id", "email");
-		test.typeAndEnter("deepak2020rana@gmail.com");
-		
+
+		Common_Methods
+				.openBrowser("firefox", Common_Methods.getProperty("URL"));
+		Common_Methods.findElement("id", "email");
+		Common_Methods.typeAndEnter("deepak2020rana@gmail.com");
+
 	}
 
 }
