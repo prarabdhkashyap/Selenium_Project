@@ -34,6 +34,9 @@ public class Common_Methods {
 		} else if (locator.equalsIgnoreCase("name")) {
 			element = driver.findElement(By.name(path));
 		}
+		else if (locator.equalsIgnoreCase("xpath")) {
+			element = driver.findElement(By.xpath(path));
+		}
 		return element;
 	}
 
@@ -50,7 +53,7 @@ public class Common_Methods {
 			throws IOException {
 
 		File file = new File(
-				"C:\\Users\\deepak.kumar\\NBAWorkspace\\Selenium_Franework\\element.properties");
+				"C:\\Users\\Lenovo\\Desktop\\Code\\Selenium_Project\\element.properties");
 		FileInputStream fileInput = new FileInputStream(file);
 
 		Properties prop = new Properties();
