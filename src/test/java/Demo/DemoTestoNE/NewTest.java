@@ -35,7 +35,7 @@ public class NewTest {
   public void beforeClass() throws MalformedURLException {
 	 //driver= new FirefoxDriver();
 	  //driver.get("http://www.gmail.com");
-	  url = new URL("http://pyneema:dd01d1a4-ffc5-4db3-ab46-e591492aedbf@ondemand.saucelabs.com:80/wd/hub");
+	  url = new URL("http://prarabdhkashyap:30b669a5-834b-456a-ab1a-9f739fc80e35@ondemand.saucelabs.com:80/wd/hub");
 
 		// URL url = new URL ("http://192.168.0.109:4444/wd/hub");
 	   capabilities = DesiredCapabilities.firefox();
